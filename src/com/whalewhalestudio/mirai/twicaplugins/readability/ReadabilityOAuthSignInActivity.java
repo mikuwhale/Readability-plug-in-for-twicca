@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -29,9 +30,10 @@ public class ReadabilityOAuthSignInActivity extends Activity {
 		webview.getSettings().setSaveFormData(false);
 		webview.clearFormData();
 		webview.clearHistory();
+		CookieSyncManager.createInstance(ReadabilityOAuthSignInActivity.this);
 		CookieManager.getInstance().removeAllCookie();
 		
-		webview.setVisibility(View.VISIBLE);
+			webview.setVisibility(View.VISIBLE);
 		setContentView(webview);
 		
 		try	{
