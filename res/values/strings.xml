@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Readability plug-in for twicca</string>
+    <string name="app_postbookmark_title">Add links to Readability</string><string name="app_signin_title">Sign in Readability</string><string name="button_login">Sign in</string>
+    <string name="button_logout">Sign out</string><string name="label_login_instructions">Click the Sign in button to sign in your Readability account. </string>
+    <string name="label_logout_instructions">Currently signed in as:</string>
+    
+    <string name="label_logout_comfirm_message">Are you sure you want sign out?</string>
+    <string name="label_logout_Yes">Yes</string>
+    <string name="label_logout_NO">No</string>
+    <string name="label_login_error_OK">OK</string><string name="label_unable_signin">Unable to get verification from Readability. Please try again.</string><string name="progress_loading_browser">Opening Browser, Please wait&#8230;</string>
+    <string name="progress_signout">Signing out, Please wait&#8230;;</string>
+    <string name="toast_post_success">Successfully added to your Reading List.</string>
+    <string name="toast_post_failed">Unable to add to Reading List. Please try again later.</string>
+    <string name="toast_no_username">No username signed in. Please sign-in in Plug-in settings.</string>
+    <string name="toast_no_url_found">No links found in tweet.</string>
+    <string name="toast_url_exist">Link already exist in Reading List.</string><string name="app_sending_title">Adding links to Readability&#8230;</string>
+    
+    
+    
+    
+    
+    
+
+</resources>

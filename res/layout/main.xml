@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/label_instruction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_login_instructions" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView 
+        android:id="@+id/label_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button 
+        android:id="@+id/button_loginlogout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:layout_margin="48dip"
+        android:text="@string/button_login"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</LinearLayout>
