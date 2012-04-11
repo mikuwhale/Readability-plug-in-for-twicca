@@ -5,17 +5,19 @@ Readability plug-in for twicca is a [twicca](http://twicca.r246.jp/) plug-in tha
 How to compile
 --------------
 1. Make sure you have Android SDK installed.
-2. Get the API Keys from [Readability](http://http://www.readability.com/publishers/api/)
+2. Get the API Keys from [Readability](http://www.readability.com/publishers/api/)
 3. Clone the repo, find the APIKeys class.
 4. Put your API key and secret in the appropriate variable.
 5. Compile the app.
 
 External Library Dependencies
 -----------------------------
-Readability plug-in for twicca used these external libraries to work:
+Readability plug-in for twicca uses these external libraries to work:
 
 - [scribe-java](https://github.com/fernandezpablo85/scribe-java)
 - [twitter-text-java](https://github.com/twitter/twitter-text-java)
+
+Both libraries are included in this repo.
 
 License
 -------
