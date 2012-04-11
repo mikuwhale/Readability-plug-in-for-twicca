@@ -33,13 +33,15 @@ public class ReadabilityPluginForTwiccaShowTweetActivity extends Activity {
 					if(!mgr.hasUserSignedIn()) {
 						makeToast(TOAST_NOUSER);
 					}
-					List<String> urls = findUrls(text);
-					if(urls != null && urls.size() > 0) {
-						mPostingDialog = ProgressDialog.show(ReadabilityPluginForTwiccaShowTweetActivity.this, "", getResources().getText(R.string.app_sending_title), true);
-						new PostBookmarkTask().execute(urls.toArray());
-					}
 					else {
-						makeToast(TOAST_NO_URL_FOUND);
+						List<String> urls = findUrls(text);
+						if(urls != null && urls.size() > 0) {
+							mPostingDialog = ProgressDialog.show(ReadabilityPluginForTwiccaShowTweetActivity.this, "", getResources().getText(R.string.progress_sending_title), true);
+							new PostBookmarkTask().execute(urls.toArray());
+						}
+						else {
+							makeToast(TOAST_NO_URL_FOUND);
+						}
 					}
 				}
 			}

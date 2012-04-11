@@ -82,7 +82,7 @@ public class OAuthAPIManager {
 		}
 	}
 	
-	public void reinitializeOAuthAPIManager() {
+	public void initializeRequestToken() {
 		mRequestToken = mService.getRequestToken();
 	}
 	
@@ -93,6 +93,5 @@ public class OAuthAPIManager {
 						.apiSecret(APIKeys.CONSUMER_SECRET)
 						.callback(Constants.OAUTH_CALLBACK_URL)
 						.build();
-		mRequestToken = mService.getRequestToken();
 	}
 }

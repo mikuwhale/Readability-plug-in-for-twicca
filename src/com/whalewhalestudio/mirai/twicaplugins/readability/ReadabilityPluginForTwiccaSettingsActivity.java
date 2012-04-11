@@ -43,7 +43,6 @@ public class ReadabilityPluginForTwiccaSettingsActivity extends Activity {
 			public void onClick(View v) {
 				// Login user
 				if(!mSettingsMgr.hasUserSignedIn())	{
-					//TODO: Add progress mPostingDialog here
 					Intent i = new Intent(getApplicationContext(), ReadabilityOAuthSignInActivity.class);
 			    	startActivityForResult(i, LOGIN_ACTIVITY);
 				}
@@ -64,11 +63,8 @@ public class ReadabilityPluginForTwiccaSettingsActivity extends Activity {
     		       .setPositiveButton(R.string.label_logout_Yes, new DialogInterface.OnClickListener() {
     		           @Override
     		    	   public void onClick(DialogInterface dialog, int id) {
-    		        	   //TODO: Add progress mPostingDialog here
     		        	   // Remove the data from the shared preferences 
      		        	   mSettingsMgr.removeUserToken();
-     		        	   // Reinit the OAuthAPIManager so that user can sign in again
-     		        	   OAuthAPIManager.Instance().reinitializeOAuthAPIManager();
      		        	   // Update UI
     		               setLoginUI(true, null);
     		           }
